@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Website In Progress";
+}
+
+<div class="text-left">
+    <h1 class="display-4">Orden Inmortal</h1>
+    <a href="https://www.wowprogress.com/guild/eu/exodar/Orden+Inmortal" target="_blank">WowProgress</a>
+    <p></p>
+    <a href="https://twitter.com/ordeninmortal?lang=en" target="_blank">Twitter</a>
+    <p></p>
+</div>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Azure Media Player</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--*****START OF Azure Media Player Scripts*****-->
+    <!--Note: DO NOT USE the "latest" folder in production. Replace "latest" with a version number like "1.0.0"-->
+    <!--EX:<script src="//amp.azure.net/libs/amp/1.0.0/azuremediaplayer.min.js"></script>-->
+    <!--Azure Media Player versions can be queried from //aka.ms/ampchangelog-->
+    <link href="//amp.azure.net/libs/amp/1.0.0/skins/amp-default/azuremediaplayer.min.css" rel="stylesheet">
+    <script src="//amp.azure.net/libs/amp/1.0.0/azuremediaplayer.min.js"></script>
+    <!--*****END OF Azure Media Player Scripts*****-->
+</head>
+<body>
+    <h3>Castle Nathria: Sire Denathrius Mythic Mode</h3>
+    <video id="azuremediaplayer" class="azuremediaplayer amp-default-skin amp-big-play-centered" tabindex="0"> </video>
+    <script>
+        var myOptions = {
+            autoplay: false,
+            controls: true,
+            width: "640",
+            height: "400",
+            poster: ""
+        };
+        var myPlayer = amp("azuremediaplayer", myOptions);
+        myPlayer.src([{ src: "https://marcazuremediaservices-frct1.streaming.media.azure.net/ec26604a-8b11-40ec-8251-d5a6d8a60fd8/OISireMM.ism/manifest", type: "application/vnd.ms-sstr+xml" },]);
+    </script>
+</body>

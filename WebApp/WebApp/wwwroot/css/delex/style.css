@@ -334,25 +334,25 @@ nav.small {
     font-size: 13px;
     color: #fff;
     background: #000;
-    min-height: 400px;
+    min-height: 1080px;
 }
 
 .home-page-photo {
-    background-image: url(../../assets/images/delex/bg-5.jpg);
+    background-image: url(../../assets/images/WeiWangWallpaper.jpg);
     background-size: cover;
     z-index: -1;
     position: absolute;
     top: 0;
-    opacity: 0.50;
+    opacity: 0.40;
     right: 0;
     bottom: 0;
     left: 0;
 }
 
 .home__header-content {
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-60%);
+    -ms-transform: translateY(-60%);
+    transform: translateY(-60%);
     position: absolute;
     top: 50%;
     left: 0;
@@ -383,8 +383,23 @@ nav.small {
     margin-bottom: 30px;
 }
 
-/* 7 Services
+/* 7 Videos
 ----------------------------------------------------------------------------- */
+
+.main-videos {
+    padding: 330px 0px 250px 0;
+    z-index: 1;
+    text-align: center;
+    position: relative;
+    font-size: 13px;
+    color: #fff;
+    background: #fff;
+    min-height: 720px;
+}
+
+/* 8 Service
+----------------------------------------------------------------------------- */
+
 .services-item {
     padding: 40px 20px;
 }
@@ -404,7 +419,7 @@ nav.small {
 /* 11 Twitter-tweets
 ----------------------------------------------------------------------------- */
 #twitter_tweet {
-    background: url(../../assets/images/delex/pattern1.png), url(../../assets/images/delex/bg-4.jpg);
+    background: url(../../assets/images/delex/pattern1.png), url(../../assets/images/Shadowlands.jpg);
 }
 
 .twitter_tweet h5 {

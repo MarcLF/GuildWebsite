@@ -159,6 +159,7 @@ jQuery(function ($) {
         $loader: $(".loader"),
         $animationload: $(".animationload"),
         $navbarLink: $('.navbar-nav a'),
+        $btncustomLink: $('.btn-custom'),
         $testiSlider: $("#testi-carousel"),
         $homeSlider: $("#main-home-carousel"),
 
@@ -208,7 +209,7 @@ jQuery(function ($) {
 
 
             this.$loader.delay(300).fadeOut();
-            this.$animationload.delay(3600).fadeOut("slow");
+            this.$animationload.delay(600).fadeOut("slow");
 
             this.$backToTop.click(function () {
                 $("html, body").animate({ scrollTop: 0 }, 1000);
@@ -216,6 +217,14 @@ jQuery(function ($) {
             });
 
             this.$navbarLink.click(function (event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top - 50
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+
+            this.$btncustomLink.click(function (event) {
                 var $anchor = $(this);
                 $('html, body').stop().animate({
                     scrollTop: $($anchor.attr('href')).offset().top - 50
